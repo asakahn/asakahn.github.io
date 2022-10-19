@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link tags -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Title -->
+    <title>Asa Kahn</title>
+</head>
+<body>
+    <!-- Navbar stuff -->
+    <nav class="navbar">
+        <!-- Logo img and Logo text-->
+        <div id="nav-logo-link" href="#">
+            <img class="nav-logo-img" src="img/logo-orange.webp" />
+            <h2 class="nav-logo-text">Asa Kahn</h2>
+        </div>
+        <!-- Hamburger Menu (Input checkbox + label) -->
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamburger" id="nav-label">
+            <span class="bun bun-top">
+                <span class="bun-crust bun-crust-top"></span>
+            </span>
+            <span class="bun bun-bottom">
+                <span class="bun-crust bun-crust-bottom"></span>
+            </span>
+        </label>
+        <!-- Navigation bar links container -->
+        <div class="nav-links-container" id="nav-links-container">
+            <ul class="nav-links">
+                <li id="home-link" class="nav-item">Home</li>
+                <li id="about-me-link" class="nav-item">About Me</li>
+                <li id="projects-link" class="nav-item">Projects</li>
+                <li id="contact-link" class="nav-item">Contact</li>
+            </ul>
+        </div>
+        <!-- Social links (github, email)-->
+        <div id="sociazl-links" class="sociazl-links">
+            <div class="tooltip">
+                <a class="sociazl-item" target="_blank" href="https://www.linkedin.com/in/asa-kahn/"><i class="bi bi-linkedin"></i></a>
+                <span class="tooltip-text">LinkedIn</span>
+            </div>
+            <div class="tooltip">
+                <a class="sociazl-item" target="_blank" href="https://github.com/asakahn"><i class="bi bi-github"></i></a>
+                <span class="tooltip-text">Github</span>
+            </div>
+            <div class="tooltip">
+                <a class="sociazl-item" href="mailto:KahnTek@gmail.com"><i class="bi bi-envelope"></i></a>
+                <span class="tooltip-text">Email</span>
+            </div>
+        </div>
+    </nav>
+    <!-- Main content -->
+    <div class="content">
+        <!-- Home Section -->
+        <div id="home-section">
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h2>Hi there!</h2>
+                    <br/>
+                    <div>
+                        <h1 id="who-am-i"></h1>
+                        <span id="blinker-span"></span>
+                    </div>
+                    <br/>
+                    <h3>based in NYC Metro Area.</h3>
+                    <div id="arrow-btn">
+                        <i class="bi bi-arrow-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Me Section-->
+        <div id="about-me-section">
+            <h1 class="section-title">About Me</h1>
+            <div class="about-me-desc">
+                <h2>I'm <span class="my-name">Asa Kahn</span>.</h2>
+                <p>I graduated from Rutgers University majoring in Computer Science and minoring in Mathematics.</p>
+                <p>My primary interests are creating mobile-responsive websites and developing Android applications.</p>
+            </div>
+        </div>
+        <!-- Projects/Journey -->
+        <div id="projects-section">
+            <h1 class="section-title">Projects</h1>
+            <div class="timeline">
+                <div class="outer-timeline">
+                    <div class="card-timeline">
+                        <div class="info-timeline">
+                            <h2 class="timeline-title">ReactJS Movie Project</h2>
+                            <ul class="timeline-ul">
+                                <li> Developed a responsive movie website using the frontend framework React.js with the backend being Node.js.</li>
+                                <li>Uses HTML, CSS, MySQL, and Javascript</li>
+                                <li> Utilizes an API to fetch the movies from <a target="_blank" href="https://themoviedb.org/">TheMovieDB.org</a></li>
+                                <li>Implemented a registration and login systems which interact with the Node.js backend using MySQL</li>
+                            </ul>
+                            <br/>
+                            <div class="images-container">
+                                <div onClick="toggleModal(0)" class="image-box">
+                                    <img class="image-img" src="./img/react_movie_project/frontPage_noLogin.png" />
+                                    <div class="image-title">Front Page</div>
+                                </div>
+                                <div onClick="toggleModal(1)" class="image-box">
+                                    <img class="image-img" src="./img/react_movie_project/movieInfoPage.png" />
+                                    <div class="image-title">Video Page</div>
+                                </div>
+                                <div onClick="toggleModal(2)" class="image-box">
+                                    <img class="image-img" src="./img/react_movie_project/loginRegister.png" />
+                                    <div class="image-title">Login/Register Form</div>
+                                </div>
+                                <div onClick="toggleModal(3)" class="image-box">
+                                    <img class="image-img img-stretch" src="./img/react_movie_project/editAccount.png" />
+                                    <div class="image-title">Edit Account</div>
+                                </div>
+                                <div onClick="toggleModal(4)" class="image-box">
+                                    <img class="image-img" src="./img/react_movie_project/frontPage_Login.png" />
+                                    <div class="image-title">Logged In, Recently Watched Section</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-timeline">
+                        <div class="info-timeline">
+                            <h2 class="timeline-title">E-Commerce Website Project - (PHP, MySQL)</h2>
+                            <ul class="timeline-ul">
+                                <li>Implemented an e-commerce website with an integrated shopping cart system.</li>
+                                <li>Utilized HTML, CSS, and PHP.</li>
+                                <li>Developed with MySQL as the database service.</li>
+                            </ul>
+                            <br/>
+                            <div class="images-container">
+                                <div onClick="toggleModal(5)" class="image-box">
+                                    <img class="image-img" src="./img/productPageProject/products1.png" />
+                                    <div class="image-title">Hoodies Page</div>
+                                </div>
+                                <div onClick="toggleModal(6)" class="image-box">
+                                    <img class="image-img" src="./img/productPageProject/products2.png" />
+                                    <div class="image-title">Sweatshirts Page</div>
+                                </div>
+                                <div onClick="toggleModal(7)" class="image-box">
+                                    <img class="image-img" src="./img/productPageProject/itemInCart.png" />
+                                    <div class="image-title">Items in Cart</div>
+                                </div>
+                                <div onClick="toggleModal(8)" class="image-box">
+                                    <img class="image-img img-stretch" src="./img/productPageProject/processed.png" />
+                                    <div class="image-title">Checkout page</div>
+                                </div>
+                                <div onClick="toggleModal(9)" class="image-box">
+                                    <img class="image-img img-stretch" src="./img/productPageProject/emptyCart.png" />
+                                    <div class="image-title">Empty Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-timeline">
+                        <div class="info-timeline">
+                            <h2 class="timeline-title">Clock4Fold - Android App</h2>
+                            <h3><a target="_blank" href="https://play.google.com/store/apps/details?id=com.asakahn.clock4fold">PlayStore Link</a></h3>
+                            <h4><a target="_blank" href="http://youtube.com/watch?v=kpGgke--Cbw">YouTube Link</a></h4>
+                            <ul class="timeline-ul">
+                                <li>Coded in Kotlin on Android Studio for the folding phones by Samsung.</li>
+                                <li>The app displays the current time and adapts to any screen size.</li>
+                                <li>Uploaded the app to the Google Playstore.</li>
+                            </ul>
+                            <br/>
+                            <div class="images-container">
+                                <div onClick="toggleModal(10)" class="image-box">
+                                    <img class="image-img" src="./img/Clock4Fold/1.jpg" />
+                                    <div class="image-title">Outer Display Horizontal</div>
+                                </div>
+                                <div onClick="toggleModal(11)" class="image-box">
+                                    <img class="image-img" src="./img/Clock4Fold/2.jpg" />
+                                    <div class="image-title">Inner Display Half-Folded</div>
+                                </div>
+                                <div onClick="toggleModal(12)" class="image-box">
+                                    <img class="image-img" src="./img/Clock4Fold/3.jpg" />
+                                    <div class="image-title">Inner Display Laptop Mode</div>
+                                </div>
+                                <div onClick="toggleModal(13)" class="image-box">
+                                    <img class="image-img" src="./img/Clock4Fold/4.jpg" />
+                                    <div class="image-title">Inner Display Full Display</div>
+                                </div>
+                                <div onClick="toggleModal(14)" class="image-box">
+                                    <img class="image-img" src="./img/Clock4Fold/5.jpg" />
+                                    <div class="image-title">Settings Page</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-timeline">
+                        <div class="info-timeline">
+                            <h2 class="timeline-title">Various other Android Projects</h2>
+                            <ul class="timeline-ul">
+                                <li>Android projects using Java on Android Studio such as an address book app, cannon game, doodle drawing app, and a weather viewer app.</li>
+                            </ul>
+                            <br/>
+                            <div class="images-container">
+                                <div onClick="toggleModal(15)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/android/addressBook1.png" />
+                                    <div class="image-title-vert">Address Book Contacts List</div>
+                                </div>
+                                <div onClick="toggleModal(16)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/android/addressBook2.png" />
+                                    <div class="image-title-vert">Address Book Edit Contact</div>
+                                </div>
+                                <div onClick="toggleModal(17)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/android/cannonGame.png" />
+                                    <div class="image-title-vert">Cannon Game</div>
+                                </div>
+                                <div onClick="toggleModal(18)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/android/doodleApp.png" />
+                                    <div class="image-title-vert">Doodle Drawing App</div>
+                                </div>
+                                <div onClick="toggleModal(19)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/android/weatherApp.png" />
+                                    <div class="image-title-vert">Weather App</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-timeline">
+                        <div class="info-timeline">
+                            <h2 class="timeline-title">Various iOS Projects</h2>
+                            <ul class="timeline-ul">
+                                <li>iOS projects using Swift on Xcode such as a personality quiz app, a restaurant menu app, and a to-do list app.</li>
+                            </ul>
+                            <br/>
+                            <h3>Restaurant App</h3>
+                            <ul class="timeline-ul">
+                                <li>A restaurant app that let's users see a menu, choose items to add to the order and process the order. </li>
+                                <li>All menu information is fed from an external server so that items can be configured on the fly.</li>
+                                <li>After clicking submit order, the order information get's passed to the server which determines 
+                                    how long it takes and responds back with a time interval of the order.</li>
+                            </ul>
+                            <br/>
+                            <div class="images-container">
+                                <div onClick="toggleModal(20)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/menu.png" />
+                                    <div class="image-title-vert">Menu Page</div>
+                                </div>
+                                <div onClick="toggleModal(21)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/menuEntree.png" />
+                                    <div class="image-title-vert">Menu Entrees</div>
+                                </div>
+                                <div onClick="toggleModal(22)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/itemDescription.png" />
+                                    <div class="image-title-vert">Food Item Description</div>
+                                </div>
+                                <div onClick="toggleModal(23)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/orders.png" />
+                                    <div class="image-title-vert">Orders Cart Page</div>
+                                </div>
+                                <div onClick="toggleModal(24)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/submit.png" />
+                                    <div class="image-title-vert">Submit Orders Page</div>
+                                </div>
+                                <div onClick="toggleModal(25)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/ios/todoApp1.png" />
+                                    <div class="image-title-vert">To-Do App List</div>
+                                </div>
+                                <div onClick="toggleModal(26)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/ios/todoApp2.png" />
+                                    <div class="image-title-vert">To-Do App More Info</div>
+                                </div>
+                                <div onClick="toggleModal(27)" class="image-box-vert">
+                                    <img class="image-img-vert img-stretch" src="./img/ios/loginExample.png" />
+                                    <div class="image-title-vert">Login Example</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact-section">
+            <h1 class="section-title">Contact Me</h1>
+            <div class="box-two">
+                <div class="box-two-inner">
+                    <div class="box-two-title">
+                        <i class="bi-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                    </div>
+                    <p><a class="link-no-decor" target="_blank" href="https://www.linkedin.com/in/asa-kahn/">Asa Kahn</a></p>
+                </div>
+                <div class="box-two-inner">
+                    <div class="box-two-title">
+                        <i class="bi-github"></i>
+                        <h3>Github</h3>
+                    </div>
+                    <p><a class="link-no-decor" target="_blank" href="https://github.com/asakahn">@asakahn</a></p>
+                </div>
+                <div class="box-two-inner">
+                    <div class="box-two-title">
+                        <i class="bi bi-envelope"></i>
+                        <h3>Email</h3>
+                    </div>
+                    <p><a class="link-no-decor" href="mailto:KahnTek@gmail.com">KahnTek@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div onClick="toggleModal(-1)" id="image-modal">
+        <div id="image-modal-holder">
+            <div id="image-hold">
+                <div class="center-image">
+                    <img id="image-hold-img" src="./img/react_movie_project/frontPage_noLogin.png"/>
+                </div>
+                <h2 id="image-hold-title">Front Page</h2>
+                <p id="image-hold-desc">Little small description...</p>
+            </div>
+        </div>
+    </div>
+    <div class="add-space-break"></div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
