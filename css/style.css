@@ -742,4 +742,7 @@ body {
     .box-two-inner:nth-child(2) {
         margin-top: 50px;
     }
+    .box-two-inner:nth-child(3) {
+        margin-top: 50px;
+    }
 }
