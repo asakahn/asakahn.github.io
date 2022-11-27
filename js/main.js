@@ -110,8 +110,17 @@ imageMap.set(24, ["./img/ios/RestaurantApp_iOS/submit.png","Submit Order Page","
 imageMap.set(25, ["./img/ios/todoApp1.png", "To-Do App List", "A simple ToDo app to practice edit, store, and retrieve information from the local storage on the iOS device."])
 imageMap.set(26, ["./img/ios/todoApp2.png", "To-Do App More Info", "A simple ToDo app to practice edit, store, and retrieve information from the local storage on the iOS device."])
 imageMap.set(27, ["./img/ios/loginExample.png", "Login Example", "A basic user authentication form on iOS."])
-
-
+imageMap.set(28, ["./img/reactShareMeProject/loginPage.png", "Login Page", "Implemented a “Login with Google” button to login to the website."])
+imageMap.set(29, ["./img/reactShareMeProject/frontPage.png", "Front Page", "Front page of the ShareMe website once user is logged in. The homepage displays the masonry grid layout of 'pins' sorted by recently posted pins. "])
+imageMap.set(30, ["./img/reactShareMeProject/frontPageMobile.png", "Front Page Mobile", "Front page of the ShareMe website once user is logged in, displayed for mobile"])
+imageMap.set(31, ["./img/reactShareMeProject/searchResults.png", "Search Results", "Typing into the search bar will only display the pins with the keyword in the title"])
+imageMap.set(32, ["./img/reactShareMeProject/postPage.png", "Pin Details Page", "When a user clicks on a pin from the feed(homepage), a pin detail page will display. The pin detail page shows the pin's image in full, along with the title, description, external website url, and a comments section. Also, at the bottom, pins from the same category will load"])
+imageMap.set(33, ["./img/reactShareMeProject/profilePage.png", "User Profile Page", "A users profile page will show pins they have created and saved."])
+imageMap.set(34, ["./img/reactShareMeProject/upload.png", "Upload Pin Page", "The upload pin page lets the user select an image to upload, set the title, description, external website url, and a pin category."])
+imageMap.set(35, ["./lifx/img/app.png", "Main App", ""])
+imageMap.set(36, ["./lifx/img/example.png", "App as Extension", ""])
+imageMap.set(37, ["./lifx/img/fullApp1.png", "Multiple Lights 1", ""])
+imageMap.set(38, ["./lifx/img/fullApp2.png", "Multiple Lights 2", ""])
 
 const toggleModal = (id) => {
 
