@@ -1,0 +1,50 @@
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.lifx-logo-box {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+.lifx-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.lifx-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    padding-bottom: 80px;
+}
+
+.lifx-img-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 32px;
+}
+
+.lifx-img-desc img {
+    /* object-fit: contain; */
+}
+
+/* If viewport WIDTH is small (mobile device), then make navbar collapse to top */
+@media screen and (max-width: 1332px){
+    .lifx-img-desc {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
