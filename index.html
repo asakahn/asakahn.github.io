@@ -82,6 +82,8 @@
                 <h2>I'm <span class="my-name">Asa Kahn</span>.</h2>
                 <p>I graduated from Rutgers University majoring in Computer Science and minoring in Mathematics.</p>
                 <p>My primary interests are creating mobile-responsive websites and developing Android applications.</p>
+                <p>I have an in-depth understanding of HTML, CSS, JavaScript, PHP, NodeJS, and ReactJS for web development.</p>
+                <p>I also know Java/Kotlin and Python for Android and backend development.</p>
             </div>
         </div>
         <!-- Projects/Journey -->
@@ -91,33 +93,110 @@
                 <div class="outer-timeline">
                     <div class="card-timeline">
                         <div class="info-timeline">
+                            <h2 class="timeline-title">LIFX Lights Control &nbsp;&bull;&nbsp; Chrome/Firefox Extension</h2>
+                            <h3><a href="https://asakahn.com/lifx" target="_blank">LIFX Lights Control Website</a></h3>
+                            <ul class="timeline-ul">
+                                <li>Created a Chrome/Firefox extension to easily control LIFX's lamps straight from the browser!</li>
+                                <li>Fetches data from LIFX's API to get the current state of each lamp, like brightness, color, power is on/off.</li>
+                                <li>Sends data via LIFX's API to control each individual lamp or all of them at once.</li>
+                                <li>Coded in Vanilla JS, HTML, and CSS</li>
+                            </ul>
+                            <br/>
+                            <div class="images-container"  >
+                                <div onClick="toggleModal(35)" class="image-box-vert">
+                                    <img class="image-img-vert" src="./lifx/img/app.png" loading="lazy"/>
+                                    <div class="image-title-vert">Main App</div>
+                                </div>
+                                <div onClick="toggleModal(36)" class="image-box-vert">
+                                    <img class="image-img-vert" src="./lifx/img/example.png" loading="lazy"/>
+                                    <div class="image-title-vert">App as Extension</div>
+                                </div>
+                                <div onClick="toggleModal(37)" class="image-box-vert">
+                                    <img class="image-img-vert" src="./lifx/img/fullApp1.png" loading="lazy"/>
+                                    <div class="image-title-vert">Multiple Lights 1</div>
+                                </div>
+                                <div onClick="toggleModal(38)" class="image-box-vert">
+                                    <img class="image-img-vert" src="./lifx/img/fullApp2.png" loading="lazy"/>
+                                    <div class="image-title-vert">Multiple Lights 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-timeline">
+                        <div class="info-timeline">
+                            <h2 class="timeline-title">React.js "ShareMe" Social Media Website</h2>
+                            <h3><a href="https://glistening-sherbet-1f8c07.netlify.app/" target="_blank">ShareMe Project Link</a></h3>
+                            <ul class="timeline-ul">
+                                <li>Developed a responsive mock social media website that’s similar to Pinterest using React.js and the backend being Node.js.</li>
+                                <li>Implemented a “Login with Google” button to login to the website.</li>
+                                <li>Website shows a Masonry Grid Layout of ‘pins’ (images/components), with options to search for different results by keyword or category.</li>
+                                <li>Users can create and post new ‘pins.’ Users are also able to comment on another user’s pin.</li>
+                                <li>The website is hosted on Netlify and holds persistent data by communicating to <a href="https://sanity.io" target="_blank">Sanity.io</a>’s API, which is a backend storage service.</li>
+                            </ul>
+                            <br/>
+                            <div class="images-container"  >
+                                <div onClick="toggleModal(28)" class="image-box">
+                                    <img class="image-img" src="./img/reactShareMeProject/loginPage.png" loading="lazy"/>
+                                    <div class="image-title">Login Page</div>
+                                </div>
+                                <div onClick="toggleModal(29)" class="image-box">
+                                    <img class="image-img" src="./img/reactShareMeProject/frontPage.png" loading="lazy"/>
+                                    <div class="image-title">Front Page</div>
+                                </div>
+                                <div onClick="toggleModal(30)" class="image-box">
+                                    <img class="image-img" src="./img/reactShareMeProject/frontPageMobile.png" loading="lazy"/>
+                                    <div class="image-title">Front Page Mobile</div>
+                                </div>
+                                <div onClick="toggleModal(31)" class="image-box">
+                                    <img class="image-img img-stretch" src="./img/reactShareMeProject/searchResults.png" loading="lazy"/>
+                                    <div class="image-title">Search Results</div>
+                                </div>
+                                <div onClick="toggleModal(32)" class="image-box">
+                                    <img class="image-img" src="./img/reactShareMeProject/postPage.png" loading="lazy"/>
+                                    <div class="image-title">Pin Details Page</div>
+                                </div>
+                                <div onClick="toggleModal(33)" class="image-box">
+                                    <img class="image-img" src="./img/reactShareMeProject/profilePage.png" loading="lazy"/>
+                                    <div class="image-title">User Profile Page</div>
+                                </div>
+                                <div onClick="toggleModal(34)" class="image-box">
+                                    <img class="image-img" src="./img/reactShareMeProject/upload.png" loading="lazy"/>
+                                    <div class="image-title">Upload Pin Page</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-timeline">
+                        <div class="info-timeline">
                             <h2 class="timeline-title">ReactJS Movie Project</h2>
                             <ul class="timeline-ul">
-                                <li> Developed a responsive movie website using the frontend framework React.js with the backend being Node.js.</li>
-                                <li>Uses HTML, CSS, MySQL, and Javascript</li>
-                                <li> Utilizes an API to fetch the movies from <a target="_blank" href="https://themoviedb.org/">TheMovieDB.org</a></li>
+                                <li>Developed a responsive movie website using the frontend framework React.js with the backend being Node.js.</li>
+                                <li>Utilizes an API to fetch the movies from <a target="_blank" href="https://themoviedb.org/">TheMovieDB.org</a></li>
+                                <li>Created infinite scroll effect which fetches for new list of movies to display. And created a search bar to search by movie title.</li>
                                 <li>Implemented a registration and login systems which interact with the Node.js backend using MySQL</li>
+                                <li>Logged in users, will have a “Recently Watched” section displayed like Netflix.</li>
+                                <li>Uses HTML, CSS, MySQL, and Javascript</li>
                             </ul>
                             <br/>
                             <div class="images-container">
                                 <div onClick="toggleModal(0)" class="image-box">
-                                    <img class="image-img" src="./img/react_movie_project/frontPage_noLogin.png" />
+                                    <img class="image-img" src="./img/react_movie_project/frontPage_noLogin.png" loading="lazy"/>
                                     <div class="image-title">Front Page</div>
                                 </div>
                                 <div onClick="toggleModal(1)" class="image-box">
-                                    <img class="image-img" src="./img/react_movie_project/movieInfoPage.png" />
+                                    <img class="image-img" src="./img/react_movie_project/movieInfoPage.png" loading="lazy"/>
                                     <div class="image-title">Video Page</div>
                                 </div>
                                 <div onClick="toggleModal(2)" class="image-box">
-                                    <img class="image-img" src="./img/react_movie_project/loginRegister.png" />
+                                    <img class="image-img" src="./img/react_movie_project/loginRegister.png" loading="lazy"/>
                                     <div class="image-title">Login/Register Form</div>
                                 </div>
                                 <div onClick="toggleModal(3)" class="image-box">
-                                    <img class="image-img img-stretch" src="./img/react_movie_project/editAccount.png" />
+                                    <img class="image-img img-stretch" src="./img/react_movie_project/editAccount.png" loading="lazy"/>
                                     <div class="image-title">Edit Account</div>
                                 </div>
                                 <div onClick="toggleModal(4)" class="image-box">
-                                    <img class="image-img" src="./img/react_movie_project/frontPage_Login.png" />
+                                    <img class="image-img" src="./img/react_movie_project/frontPage_Login.png" loading="lazy"/>
                                     <div class="image-title">Logged In, Recently Watched Section</div>
                                 </div>
                             </div>
@@ -127,30 +206,31 @@
                         <div class="info-timeline">
                             <h2 class="timeline-title">E-Commerce Website Project - (PHP, MySQL)</h2>
                             <ul class="timeline-ul">
-                                <li>Implemented an e-commerce website with an integrated shopping cart system.</li>
-                                <li>Utilized HTML, CSS, and PHP.</li>
-                                <li>Developed with MySQL as the database service.</li>
+                                <li>Implemented an e-commerce website with an integrated shopping cart system from scratch as part of my class’s final project.</li>
+                                <li>Site Admin can dynamically add new products, and have it displayed on the front-page.</li>
+                                <li>Users can add products to cart, edit the cart by updating the quantity or removing products and finally, checkout.</li>
+                                <li>Utilized HTML, CSS, and PHP. Developed with MySQL as the database service.</li>
                             </ul>
                             <br/>
                             <div class="images-container">
                                 <div onClick="toggleModal(5)" class="image-box">
-                                    <img class="image-img" src="./img/productPageProject/products1.png" />
+                                    <img class="image-img" src="./img/productPageProject/products1.png" loading="lazy"/>
                                     <div class="image-title">Hoodies Page</div>
                                 </div>
                                 <div onClick="toggleModal(6)" class="image-box">
-                                    <img class="image-img" src="./img/productPageProject/products2.png" />
+                                    <img class="image-img" src="./img/productPageProject/products2.png" loading="lazy"/>
                                     <div class="image-title">Sweatshirts Page</div>
                                 </div>
                                 <div onClick="toggleModal(7)" class="image-box">
-                                    <img class="image-img" src="./img/productPageProject/itemInCart.png" />
+                                    <img class="image-img" src="./img/productPageProject/itemInCart.png"loading="lazy"/>
                                     <div class="image-title">Items in Cart</div>
                                 </div>
                                 <div onClick="toggleModal(8)" class="image-box">
-                                    <img class="image-img img-stretch" src="./img/productPageProject/processed.png" />
+                                    <img class="image-img img-stretch" src="./img/productPageProject/processed.png"loading="lazy"/>
                                     <div class="image-title">Checkout page</div>
                                 </div>
                                 <div onClick="toggleModal(9)" class="image-box">
-                                    <img class="image-img img-stretch" src="./img/productPageProject/emptyCart.png" />
+                                    <img class="image-img img-stretch" src="./img/productPageProject/emptyCart.png" loading="lazy"/>
                                     <div class="image-title">Empty Cart</div>
                                 </div>
                             </div>
@@ -160,32 +240,31 @@
                         <div class="info-timeline">
                             <h2 class="timeline-title">Clock4Fold - Android App</h2>
                             <h3><a target="_blank" href="https://play.google.com/store/apps/details?id=com.asakahn.clock4fold">PlayStore Link</a></h3>
-                            <h4><a target="_blank" href="http://youtube.com/watch?v=kpGgke--Cbw">YouTube Link</a></h4>
                             <ul class="timeline-ul">
-                                <li>Coded in Kotlin on Android Studio for the folding phones by Samsung.</li>
-                                <li>The app displays the current time and adapts to any screen size.</li>
+                                <li>Coded in Java/Kotlin on Android Studio for the folding phones by Samsung.</li>
+                                <li>The app displays the current time and adapts to any screen state.</li>
                                 <li>Uploaded the app to the Google Playstore.</li>
                             </ul>
                             <br/>
                             <div class="images-container">
                                 <div onClick="toggleModal(10)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/1.jpg" />
+                                    <img class="image-img" src="./img/Clock4Fold/1.jpg" loading="lazy"/>
                                     <div class="image-title">Outer Display Horizontal</div>
                                 </div>
                                 <div onClick="toggleModal(11)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/2.jpg" />
+                                    <img class="image-img" src="./img/Clock4Fold/2.jpg" loading="lazy"/>
                                     <div class="image-title">Inner Display Half-Folded</div>
                                 </div>
                                 <div onClick="toggleModal(12)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/3.jpg" />
+                                    <img class="image-img" src="./img/Clock4Fold/3.jpg" loading="lazy"/>
                                     <div class="image-title">Inner Display Laptop Mode</div>
                                 </div>
                                 <div onClick="toggleModal(13)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/4.jpg" />
+                                    <img class="image-img" src="./img/Clock4Fold/4.jpg" loading="lazy"/>
                                     <div class="image-title">Inner Display Full Display</div>
                                 </div>
                                 <div onClick="toggleModal(14)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/5.jpg" />
+                                    <img class="image-img" src="./img/Clock4Fold/5.jpg" loading="lazy"/>
                                     <div class="image-title">Settings Page</div>
                                 </div>
                             </div>
@@ -200,23 +279,23 @@
                             <br/>
                             <div class="images-container">
                                 <div onClick="toggleModal(15)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/addressBook1.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/android/addressBook1.png" loading="lazy"/>
                                     <div class="image-title-vert">Address Book Contacts List</div>
                                 </div>
                                 <div onClick="toggleModal(16)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/addressBook2.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/android/addressBook2.png" loading="lazy"/>
                                     <div class="image-title-vert">Address Book Edit Contact</div>
                                 </div>
                                 <div onClick="toggleModal(17)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/cannonGame.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/android/cannonGame.png" loading="lazy"/>
                                     <div class="image-title-vert">Cannon Game</div>
                                 </div>
                                 <div onClick="toggleModal(18)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/doodleApp.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/android/doodleApp.png" loading="lazy"/>
                                     <div class="image-title-vert">Doodle Drawing App</div>
                                 </div>
                                 <div onClick="toggleModal(19)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/weatherApp.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/android/weatherApp.png" loading="lazy"/>
                                     <div class="image-title-vert">Weather App</div>
                                 </div>
                             </div>
@@ -239,35 +318,35 @@
                             <br/>
                             <div class="images-container">
                                 <div onClick="toggleModal(20)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/menu.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/menu.png" loading="lazy"/>
                                     <div class="image-title-vert">Menu Page</div>
                                 </div>
                                 <div onClick="toggleModal(21)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/menuEntree.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/menuEntree.png" loading="lazy"/>
                                     <div class="image-title-vert">Menu Entrees</div>
                                 </div>
                                 <div onClick="toggleModal(22)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/itemDescription.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/itemDescription.png" loading="lazy"/>
                                     <div class="image-title-vert">Food Item Description</div>
                                 </div>
                                 <div onClick="toggleModal(23)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/orders.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/orders.png" loading="lazy"/>
                                     <div class="image-title-vert">Orders Cart Page</div>
                                 </div>
                                 <div onClick="toggleModal(24)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/submit.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/submit.png" loading="lazy"/>
                                     <div class="image-title-vert">Submit Orders Page</div>
                                 </div>
                                 <div onClick="toggleModal(25)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/todoApp1.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/ios/todoApp1.png" loading="lazy"/>
                                     <div class="image-title-vert">To-Do App List</div>
                                 </div>
                                 <div onClick="toggleModal(26)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/todoApp2.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/ios/todoApp2.png"loading="lazy"/>
                                     <div class="image-title-vert">To-Do App More Info</div>
                                 </div>
                                 <div onClick="toggleModal(27)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/loginExample.png" />
+                                    <img class="image-img-vert img-stretch" src="./img/ios/loginExample.png" loading="lazy"/>
                                     <div class="image-title-vert">Login Example</div>
                                 </div>
                             </div>
@@ -307,7 +386,7 @@
         <div id="image-modal-holder">
             <div id="image-hold">
                 <div class="center-image">
-                    <img id="image-hold-img" src="./img/react_movie_project/frontPage_noLogin.png"/>
+                    <img id="image-hold-img" src="./img/react_movie_project/frontPage_noLogin.png" loading="lazy"/>
                 </div>
                 <h2 id="image-hold-title">Front Page</h2>
                 <p id="image-hold-desc">Little small description...</p>
