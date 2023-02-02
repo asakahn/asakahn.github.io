@@ -1,387 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link tags -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <!-- Title -->
-    <title>Asa Kahn</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Asa Kahn - Web Developer</title>
 </head>
 <body>
-    <!-- Navbar stuff -->
-    <nav class="navbar">
-        <!-- Logo img and Logo text-->
-        <div id="nav-logo-link" href="#">
-            <img class="nav-logo-img" src="img/logo-orange.webp" />
-            <h2 class="nav-logo-text">Asa Kahn</h2>
+    <nav class="FloatNavbar">
+        <div class="NavbarOuter">
+            <div class="NavbarContainer">
+                <div class="NavbarLogoNameContainer">
+                    <a onclick="closeNavbarOnClick()" href="#HeroBannerContainer" id="nav-logo-name">
+                        <img src="./img/logo-orange.webp" alt="Asa Kahn Logo"/>
+                        <h2>Asa Kahn</h2>
+                    </a>
+                </div>
+                <button class="NavbarExpandButton" onclick="navbarExpand()">
+                    <span class="NavbarHamburgerLine"></span>
+                    <span class="NavbarHamburgerLine"></span>
+                    <span class="NavbarHamburgerLine"></span>
+                </button>
+                <ul class="NavbarLinksContainer">
+                    <li class="NavbarLink"><a href="#HeroBannerContainer">Home</a></li>
+                    <li class="NavbarLink"><a href="#AboutSection">About</a></li>
+                    <li class="NavbarLink"><a href="#WorkSection">Experience</a></li>
+                    <li class="NavbarLink"><a href="#ProjectsSection">Projects</a></li>
+                    <li class="NavbarLink"><a href="#ContactSection">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <!-- Hamburger Menu (Input checkbox + label) -->
-        <input type="checkbox" id="nav-toggle" />
-        <label for="nav-toggle" class="hamburger" id="nav-label">
-            <span class="bun bun-top">
-                <span class="bun-crust bun-crust-top"></span>
-            </span>
-            <span class="bun bun-bottom">
-                <span class="bun-crust bun-crust-bottom"></span>
-            </span>
-        </label>
-        <!-- Navigation bar links container -->
-        <div class="nav-links-container" id="nav-links-container">
-            <ul class="nav-links">
-                <li id="home-link" class="nav-item">Home</li>
-                <li id="about-me-link" class="nav-item">About Me</li>
-                <li id="projects-link" class="nav-item">Projects</li>
-                <li id="contact-link" class="nav-item">Contact</li>
-            </ul>
-        </div>
-        <!-- Social links (github, email)-->
-        <div id="sociazl-links" class="sociazl-links">
-            <div class="tooltip">
-                <a class="sociazl-item" target="_blank" href="https://www.linkedin.com/in/asa-kahn/"><i class="bi bi-linkedin"></i></a>
-                <span class="tooltip-text">LinkedIn</span>
-            </div>
-            <div class="tooltip">
-                <a class="sociazl-item" target="_blank" href="https://github.com/asakahn"><i class="bi bi-github"></i></a>
-                <span class="tooltip-text">Github</span>
-            </div>
-            <div class="tooltip">
-                <a class="sociazl-item" href="mailto:KahnTek@gmail.com"><i class="bi bi-envelope"></i></a>
-                <span class="tooltip-text">Email</span>
-            </div>
+        <div class="NavbarExtendedContainer" id="NavbarExtendedContainer">
+            <li onclick="closeNavbarOnClick()" class="NavbarLink"><a href="#HeroBannerContainer">Home</a></li>
+            <li onclick="closeNavbarOnClick()" class="NavbarLink"><a href="#AboutSection">About</a></li>
+            <li onclick="closeNavbarOnClick()" class="NavbarLink"><a href="#WorkSection">Experience</a></li>
+            <li onclick="closeNavbarOnClick()" class="NavbarLink"><a href="#ProjectsSection">Projects</a></li>
+            <li onclick="closeNavbarOnClick()" class="NavbarLink"><a href="#ContactSection">Contact</a></li>
         </div>
     </nav>
-    <!-- Main content -->
-    <div class="content">
-        <!-- Home Section -->
-        <div id="home-section">
-            <div class="hero-image">
-                <div class="hero-text">
-                    <h2>Hi there!</h2>
-                    <br/>
-                    <div>
-                        <h1 id="who-am-i"></h1>
-                        <span id="blinker-span"></span>
+
+    <section id="HeroBannerContainer" class="HeroBannerContainer">
+        <div class="HeroText">
+            <h2>Hi there!</h2>
+            <h1 id="who-am-i"></h1>
+            <h4>based in the NYC Metro Area.</h4>
+            <div id="arrow-btn">
+                <i class="bi bi-arrow-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="AboutSection" class="AboutSection">
+        <div class="AboutContainer">
+            <h1>About Me</h1>
+            <p>
+                I am a highly skilled and motivated web developer passionate about creating responsive and user-friendly websites.<br/><br/>
+                I graduated from Rutgers University with a Bachelor's degree in Computer Science and minored in Mathematics. This combination of education and experience has given me a strong foundation in programming and problem-solving, which I apply to every project I work on.<br/><br/>
+                I am particularly interested in responsive web development and am well-versed in the latest technologies and best practices for creating mobile-responsive websites. I am also experienced in developing Android applications using <b>Java</b>.<br/><br/>
+                My technical skills include an in-depth knowledge of <b>HTML, CSS, JavaScript, React.js, Node.js, and PHP</b> for web development, which I use to create dynamic and engaging user interfaces optimized for performance and accessibility. I am also familiar with various other tools and technologies, including <b>Git and MySQL</b>, which allow me to create robust and scalable applications.<br/><br/>
+                With my technical skills and problem-solving abilities, I am confident I can help bring your next project to life.
+            </p>
+        </div>
+    </section>
+
+    <section id="WorkSection" class="WorkSection">
+        <div class="WorkContainer">
+            <h1>Work Experience</h1>
+            <div class="WorkShowcaseContainer">
+                <div class="WorkShowcaseInfo">
+                    <h1>ConceptCru</h1>
+                    <a target="_blank" href="https://conceptcru.com/">ConceptCru.com</a>
+                    <br><br>
+                    <p>I founded a Website and Digital Design Studio from scratch, offering my web design and technical skills to build websites for my clients.</p>
+                </div>
+                <a target="_blank" href="https://conceptcru.com/">
+                    <img src="./img/conceptCru.png" alt="ConceptCru Website Design Showcase" />
+                </a>
+            </div>
+            <br><br><br>
+            <div class="WorkShowcaseContainer">
+                <div class="WorkShowcaseInfo">
+                    <h1>Raise Your Pinky Event Staffing</h1>
+                    <a target="_blank" href="https://raiseyourpinkyevents.com/">RaiseYourPinkyEvents.com</a>
+                    <br><br>
+                    <p>Designed a website for an event catering business in the Northern New Jersey region.</p>
+                </div>
+                <a target="_blank" href="https://raiseyourpinkyevents.com/">
+                    <img src="./img/ryp.png" alt="Raise Your Pinky Event Staffing Website Design Showcase" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ProjectsSection" class="ProjectsSection">
+        <div class="ProjectsContainer">
+            <h1 class="ProjectSectionTitle">Projects</h1>
+            
+            <div class="ProjectShowcase">
+                <h3>LIFX Lights Control &nbsp;&bull;&nbsp; Chrome/Firefox Extension</h2>
+                <a href="/lifx" target="_blank">LIFX Lights Control Website</a>
+                <h4>HTML, CSS, JavaScript</h3>
+                <ul>
+                    <li>Created a Chrome/Firefox extension to easily control LIFX's lamps straight from the browser!</li>
+                    <li>Fetches data from LIFX's API to get the current state of each lamp, like brightness, color, power is on/off.</li>
+                    <li>Sends data via LIFX's API to control each individual lamp or all of them at once.</li>
+                    <li>Coded in Vanilla JS, HTML, and CSS</li>
+                </ul>
+                <div class="ProjectImagesContainer">
+                    <div onClick="toggleModal(35)" class="image-box-vert">
+                        <img class="image-img-vert" src="./lifx/img/app.png" loading="lazy"/>
+                        <div class="image-title-vert">Main App</div>
                     </div>
-                    <br/>
-                    <h3>based in NYC Metro Area.</h3>
-                    <div id="arrow-btn">
-                        <i class="bi bi-arrow-down"></i>
+                    <div onClick="toggleModal(36)" class="image-box-vert">
+                        <img class="image-img-vert" src="./lifx/img/example.png" loading="lazy"/>
+                        <div class="image-title-vert">App as Extension</div>
+                    </div>
+                    <div onClick="toggleModal(37)" class="image-box-vert">
+                        <img class="image-img-vert" src="./lifx/img/fullApp1.png" loading="lazy"/>
+                        <div class="image-title-vert">Multiple Lights 1</div>
+                    </div>
+                    <div onClick="toggleModal(38)" class="image-box-vert">
+                        <img class="image-img-vert" src="./lifx/img/fullApp2.png" loading="lazy"/>
+                        <div class="image-title-vert">Multiple Lights 2</div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <!--
+            <div class="ProjectShowcase">
+                <h3>React.js "ShareMe" Social Media Website</h2>
+                <a href="https://glistening-sherbet-1f8c07.netlify.app/" target="_blank">ShareMe Project Link</a>
+                <h4>HTML, CSS, JavaScript, React.js, Node.js</h3>
+                <ul>
+                    <li>Developed a responsive mock social media website that’s similar to Pinterest using React.js and the backend being Node.js.</li>
+                    <li>Implemented a “Login with Google” button to login to the website.</li>
+                    <li>Website shows a Masonry Grid Layout of ‘pins’ (images/components), with options to search for different results by keyword or category.</li>
+                    <li>Users can create and post new ‘pins.’ Users are also able to comment on another user’s pin.</li>
+                    <li>The website is hosted on Netlify and holds persistent data by communicating to <a href="https://sanity.io" target="_blank">Sanity.io</a>’s API, which is a backend storage service.</li>
+                </ul>
+                <div class="ProjectImagesContainer">
+                    <div onClick="toggleModal(28)" class="image-box">
+                        <img class="image-img" src="./img/reactShareMeProject/loginPage.png" loading="lazy"/>
+                        <div class="image-title">Login Page</div>
+                    </div>
+                    <div onClick="toggleModal(29)" class="image-box">
+                        <img class="image-img" src="./img/reactShareMeProject/frontPage.png" loading="lazy"/>
+                        <div class="image-title">Front Page</div>
+                    </div>
+                    <div onClick="toggleModal(30)" class="image-box">
+                        <img class="image-img" src="./img/reactShareMeProject/frontPageMobile.png" loading="lazy"/>
+                        <div class="image-title">Front Page Mobile</div>
+                    </div>
+                    <div onClick="toggleModal(31)" class="image-box">
+                        <img class="image-img img-stretch" src="./img/reactShareMeProject/searchResults.png" loading="lazy"/>
+                        <div class="image-title">Search Results</div>
+                    </div>
+                    <div onClick="toggleModal(32)" class="image-box">
+                        <img class="image-img" src="./img/reactShareMeProject/postPage.png" loading="lazy"/>
+                        <div class="image-title">Pin Details Page</div>
+                    </div>
+                    <div onClick="toggleModal(33)" class="image-box">
+                        <img class="image-img" src="./img/reactShareMeProject/profilePage.png" loading="lazy"/>
+                        <div class="image-title">User Profile Page</div>
+                    </div>
+                    <div onClick="toggleModal(34)" class="image-box">
+                        <img class="image-img" src="./img/reactShareMeProject/upload.png" loading="lazy"/>
+                        <div class="image-title">Upload Pin Page</div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            -->
+            <div class="ProjectShowcase">
+                <h3>React.js Movie Project</h2>
+                <h4>HTML, CSS, JavaScript, React.js, Node.js, and MySQL</h3>
+                <ul>
+                    <li>Developed a responsive movie website using the frontend framework React.js with the backend being Node.js.</li>
+                    <li>Utilizes an API to fetch the movies from <a target="_blank" href="https://themoviedb.org/">TheMovieDB.org</a></li>
+                    <li>Created infinite scroll effect which fetches for new list of movies to display. And created a search bar to search by movie title.</li>
+                    <li>Implemented a registration and login systems which interact with the Node.js backend using MySQL</li>
+                    <li>Logged in users, will have a “Recently Watched” section displayed like Netflix.</li>
+                    <li>Uses HTML, CSS, MySQL, and Javascript</li>
+                </ul>
+                <div class="ProjectImagesContainer">
+                    <div onClick="toggleModal(0)" class="image-box">
+                        <img class="image-img" src="./img/react_movie_project/frontPage_noLogin.png" loading="lazy"/>
+                        <div class="image-title">Front Page</div>
+                    </div>
+                    <div onClick="toggleModal(1)" class="image-box">
+                        <img class="image-img" src="./img/react_movie_project/movieInfoPage.png" loading="lazy"/>
+                        <div class="image-title">Video Page</div>
+                    </div>
+                    <div onClick="toggleModal(2)" class="image-box">
+                        <img class="image-img" src="./img/react_movie_project/loginRegister.png" loading="lazy"/>
+                        <div class="image-title">Login/Register Form</div>
+                    </div>
+                    <div onClick="toggleModal(3)" class="image-box">
+                        <img class="image-img img-stretch" src="./img/react_movie_project/editAccount.png" loading="lazy"/>
+                        <div class="image-title">Edit Account</div>
+                    </div>
+                    <div onClick="toggleModal(4)" class="image-box">
+                        <img class="image-img" src="./img/react_movie_project/frontPage_Login.png" loading="lazy"/>
+                        <div class="image-title">Logged In, Recently Watched Section</div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="ProjectShowcase">
+                <h3>Clock4Fold - Android App</h2>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.asakahn.clock4fold">PlayStore Link</a>
+                <h4>Java/Kotlin</h3>
+                <ul>
+                    <li>Originally coded in Java, then changed codebase to Kotlin.</li>
+                    <li>Designed to be used for the folding phones by Samsung.</li>
+                    <li>The app displays the current time and adapts to any screen state with many options to change the appearance.</li>
+                    <li>Uploaded the app to the Google Playstore.</li>
+                </ul>
+                <div class="ProjectImagesContainer">
+                    <div onClick="toggleModal(10)" class="image-box">
+                        <img class="image-img" src="./img/Clock4Fold/1.jpg" loading="lazy"/>
+                        <div class="image-title">Outer Display Horizontal</div>
+                    </div>
+                    <div onClick="toggleModal(11)" class="image-box">
+                        <img class="image-img" src="./img/Clock4Fold/2.jpg" loading="lazy"/>
+                        <div class="image-title">Inner Display Half-Folded</div>
+                    </div>
+                    <div onClick="toggleModal(12)" class="image-box">
+                        <img class="image-img" src="./img/Clock4Fold/3.jpg" loading="lazy"/>
+                        <div class="image-title">Inner Display Laptop Mode</div>
+                    </div>
+                    <div onClick="toggleModal(13)" class="image-box">
+                        <img class="image-img" src="./img/Clock4Fold/4.jpg" loading="lazy"/>
+                        <div class="image-title">Inner Display Full Display</div>
+                    </div>
+                    <div onClick="toggleModal(14)" class="image-box">
+                        <img class="image-img" src="./img/Clock4Fold/5.jpg" loading="lazy"/>
+                        <div class="image-title">Settings Page</div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="ProjectShowcase">
+                <h3>E-Commerce Website Project</h2>
+                <h4>HTML, CSS, PHP, and MySQL</h3>
+                <ul>
+                    <li>Implemented an E-Commerce website with an integrated shopping cart system from scratch as part of my class’s final project.</li>
+                    <li>Site Admin can dynamically add new products, and have it displayed on the front-page.</li>
+                    <li>Users can add products to cart, edit the cart by updating the quantity or removing products and finally, checkout.</li>
+                    <li>Utilized HTML, CSS, and PHP. Developed with MySQL as the database service.</li>
+                </ul>
+                <div class="ProjectImagesContainer">
+                    <div onClick="toggleModal(5)" class="image-box">
+                        <img class="image-img" src="./img/productPageProject/products1.png" loading="lazy"/>
+                        <div class="image-title">Hoodies Page</div>
+                    </div>
+                    <div onClick="toggleModal(6)" class="image-box">
+                        <img class="image-img" src="./img/productPageProject/products2.png" loading="lazy"/>
+                        <div class="image-title">Sweatshirts Page</div>
+                    </div>
+                    <div onClick="toggleModal(7)" class="image-box">
+                        <img class="image-img" src="./img/productPageProject/itemInCart.png"loading="lazy"/>
+                        <div class="image-title">Items in Cart</div>
+                    </div>
+                    <div onClick="toggleModal(8)" class="image-box">
+                        <img class="image-img img-stretch" src="./img/productPageProject/processed.png"loading="lazy"/>
+                        <div class="image-title">Checkout page</div>
+                    </div>
+                    <div onClick="toggleModal(9)" class="image-box">
+                        <img class="image-img img-stretch" src="./img/productPageProject/emptyCart.png" loading="lazy"/>
+                        <div class="image-title">Empty Cart</div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About Me Section-->
-        <div id="about-me-section">
-            <h1 class="section-title">About Me</h1>
-            <div class="about-me-desc">
-                <h2>I'm <span class="my-name">Asa Kahn</span>.</h2>
-                <p>I graduated from Rutgers University majoring in Computer Science and minoring in Mathematics.</p>
-                <p>My primary interests are creating mobile-responsive websites and developing Android applications.</p>
-                <p>I have an in-depth understanding of HTML, CSS, JavaScript, PHP, NodeJS, and ReactJS for web development.</p>
-                <p>I also know Java/Kotlin and Python for Android and backend development.</p>
-            </div>
-        </div>
-        <!-- Projects/Journey -->
-        <div id="projects-section">
-            <h1 class="section-title">Projects</h1>
-            <div class="timeline">
-                <div class="outer-timeline">
-                    <div class="card-timeline">
-                        <div class="info-timeline">
-                            <h2 class="timeline-title">LIFX Lights Control &nbsp;&bull;&nbsp; Chrome/Firefox Extension</h2>
-                            <h3><a href="https://asakahn.com/lifx" target="_blank">LIFX Lights Control Website</a></h3>
-                            <ul class="timeline-ul">
-                                <li>Created a Chrome/Firefox extension to easily control LIFX's lamps straight from the browser!</li>
-                                <li>Fetches data from LIFX's API to get the current state of each lamp, like brightness, color, power is on/off.</li>
-                                <li>Sends data via LIFX's API to control each individual lamp or all of them at once.</li>
-                                <li>Coded in Vanilla JS, HTML, and CSS</li>
-                            </ul>
-                            <br/>
-                            <div class="images-container"  >
-                                <div onClick="toggleModal(35)" class="image-box-vert">
-                                    <img class="image-img-vert" src="./lifx/img/app.png" loading="lazy"/>
-                                    <div class="image-title-vert">Main App</div>
-                                </div>
-                                <div onClick="toggleModal(36)" class="image-box-vert">
-                                    <img class="image-img-vert" src="./lifx/img/example.png" loading="lazy"/>
-                                    <div class="image-title-vert">App as Extension</div>
-                                </div>
-                                <div onClick="toggleModal(37)" class="image-box-vert">
-                                    <img class="image-img-vert" src="./lifx/img/fullApp1.png" loading="lazy"/>
-                                    <div class="image-title-vert">Multiple Lights 1</div>
-                                </div>
-                                <div onClick="toggleModal(38)" class="image-box-vert">
-                                    <img class="image-img-vert" src="./lifx/img/fullApp2.png" loading="lazy"/>
-                                    <div class="image-title-vert">Multiple Lights 2</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-timeline">
-                        <div class="info-timeline">
-                            <h2 class="timeline-title">React.js "ShareMe" Social Media Website</h2>
-                            <h3><a href="https://glistening-sherbet-1f8c07.netlify.app/" target="_blank">ShareMe Project Link</a></h3>
-                            <ul class="timeline-ul">
-                                <li>Developed a responsive mock social media website that’s similar to Pinterest using React.js and the backend being Node.js.</li>
-                                <li>Implemented a “Login with Google” button to login to the website.</li>
-                                <li>Website shows a Masonry Grid Layout of ‘pins’ (images/components), with options to search for different results by keyword or category.</li>
-                                <li>Users can create and post new ‘pins.’ Users are also able to comment on another user’s pin.</li>
-                                <li>The website is hosted on Netlify and holds persistent data by communicating to <a href="https://sanity.io" target="_blank">Sanity.io</a>’s API, which is a backend storage service.</li>
-                            </ul>
-                            <br/>
-                            <div class="images-container"  >
-                                <div onClick="toggleModal(28)" class="image-box">
-                                    <img class="image-img" src="./img/reactShareMeProject/loginPage.png" loading="lazy"/>
-                                    <div class="image-title">Login Page</div>
-                                </div>
-                                <div onClick="toggleModal(29)" class="image-box">
-                                    <img class="image-img" src="./img/reactShareMeProject/frontPage.png" loading="lazy"/>
-                                    <div class="image-title">Front Page</div>
-                                </div>
-                                <div onClick="toggleModal(30)" class="image-box">
-                                    <img class="image-img" src="./img/reactShareMeProject/frontPageMobile.png" loading="lazy"/>
-                                    <div class="image-title">Front Page Mobile</div>
-                                </div>
-                                <div onClick="toggleModal(31)" class="image-box">
-                                    <img class="image-img img-stretch" src="./img/reactShareMeProject/searchResults.png" loading="lazy"/>
-                                    <div class="image-title">Search Results</div>
-                                </div>
-                                <div onClick="toggleModal(32)" class="image-box">
-                                    <img class="image-img" src="./img/reactShareMeProject/postPage.png" loading="lazy"/>
-                                    <div class="image-title">Pin Details Page</div>
-                                </div>
-                                <div onClick="toggleModal(33)" class="image-box">
-                                    <img class="image-img" src="./img/reactShareMeProject/profilePage.png" loading="lazy"/>
-                                    <div class="image-title">User Profile Page</div>
-                                </div>
-                                <div onClick="toggleModal(34)" class="image-box">
-                                    <img class="image-img" src="./img/reactShareMeProject/upload.png" loading="lazy"/>
-                                    <div class="image-title">Upload Pin Page</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-timeline">
-                        <div class="info-timeline">
-                            <h2 class="timeline-title">ReactJS Movie Project</h2>
-                            <ul class="timeline-ul">
-                                <li>Developed a responsive movie website using the frontend framework React.js with the backend being Node.js.</li>
-                                <li>Utilizes an API to fetch the movies from <a target="_blank" href="https://themoviedb.org/">TheMovieDB.org</a></li>
-                                <li>Created infinite scroll effect which fetches for new list of movies to display. And created a search bar to search by movie title.</li>
-                                <li>Implemented a registration and login systems which interact with the Node.js backend using MySQL</li>
-                                <li>Logged in users, will have a “Recently Watched” section displayed like Netflix.</li>
-                                <li>Uses HTML, CSS, MySQL, and Javascript</li>
-                            </ul>
-                            <br/>
-                            <div class="images-container">
-                                <div onClick="toggleModal(0)" class="image-box">
-                                    <img class="image-img" src="./img/react_movie_project/frontPage_noLogin.png" loading="lazy"/>
-                                    <div class="image-title">Front Page</div>
-                                </div>
-                                <div onClick="toggleModal(1)" class="image-box">
-                                    <img class="image-img" src="./img/react_movie_project/movieInfoPage.png" loading="lazy"/>
-                                    <div class="image-title">Video Page</div>
-                                </div>
-                                <div onClick="toggleModal(2)" class="image-box">
-                                    <img class="image-img" src="./img/react_movie_project/loginRegister.png" loading="lazy"/>
-                                    <div class="image-title">Login/Register Form</div>
-                                </div>
-                                <div onClick="toggleModal(3)" class="image-box">
-                                    <img class="image-img img-stretch" src="./img/react_movie_project/editAccount.png" loading="lazy"/>
-                                    <div class="image-title">Edit Account</div>
-                                </div>
-                                <div onClick="toggleModal(4)" class="image-box">
-                                    <img class="image-img" src="./img/react_movie_project/frontPage_Login.png" loading="lazy"/>
-                                    <div class="image-title">Logged In, Recently Watched Section</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-timeline">
-                        <div class="info-timeline">
-                            <h2 class="timeline-title">E-Commerce Website Project - (PHP, MySQL)</h2>
-                            <ul class="timeline-ul">
-                                <li>Implemented an e-commerce website with an integrated shopping cart system from scratch as part of my class’s final project.</li>
-                                <li>Site Admin can dynamically add new products, and have it displayed on the front-page.</li>
-                                <li>Users can add products to cart, edit the cart by updating the quantity or removing products and finally, checkout.</li>
-                                <li>Utilized HTML, CSS, and PHP. Developed with MySQL as the database service.</li>
-                            </ul>
-                            <br/>
-                            <div class="images-container">
-                                <div onClick="toggleModal(5)" class="image-box">
-                                    <img class="image-img" src="./img/productPageProject/products1.png" loading="lazy"/>
-                                    <div class="image-title">Hoodies Page</div>
-                                </div>
-                                <div onClick="toggleModal(6)" class="image-box">
-                                    <img class="image-img" src="./img/productPageProject/products2.png" loading="lazy"/>
-                                    <div class="image-title">Sweatshirts Page</div>
-                                </div>
-                                <div onClick="toggleModal(7)" class="image-box">
-                                    <img class="image-img" src="./img/productPageProject/itemInCart.png"loading="lazy"/>
-                                    <div class="image-title">Items in Cart</div>
-                                </div>
-                                <div onClick="toggleModal(8)" class="image-box">
-                                    <img class="image-img img-stretch" src="./img/productPageProject/processed.png"loading="lazy"/>
-                                    <div class="image-title">Checkout page</div>
-                                </div>
-                                <div onClick="toggleModal(9)" class="image-box">
-                                    <img class="image-img img-stretch" src="./img/productPageProject/emptyCart.png" loading="lazy"/>
-                                    <div class="image-title">Empty Cart</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-timeline">
-                        <div class="info-timeline">
-                            <h2 class="timeline-title">Clock4Fold - Android App</h2>
-                            <h3><a target="_blank" href="https://play.google.com/store/apps/details?id=com.asakahn.clock4fold">PlayStore Link</a></h3>
-                            <ul class="timeline-ul">
-                                <li>Coded in Java/Kotlin on Android Studio for the folding phones by Samsung.</li>
-                                <li>The app displays the current time and adapts to any screen state.</li>
-                                <li>Uploaded the app to the Google Playstore.</li>
-                            </ul>
-                            <br/>
-                            <div class="images-container">
-                                <div onClick="toggleModal(10)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/1.jpg" loading="lazy"/>
-                                    <div class="image-title">Outer Display Horizontal</div>
-                                </div>
-                                <div onClick="toggleModal(11)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/2.jpg" loading="lazy"/>
-                                    <div class="image-title">Inner Display Half-Folded</div>
-                                </div>
-                                <div onClick="toggleModal(12)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/3.jpg" loading="lazy"/>
-                                    <div class="image-title">Inner Display Laptop Mode</div>
-                                </div>
-                                <div onClick="toggleModal(13)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/4.jpg" loading="lazy"/>
-                                    <div class="image-title">Inner Display Full Display</div>
-                                </div>
-                                <div onClick="toggleModal(14)" class="image-box">
-                                    <img class="image-img" src="./img/Clock4Fold/5.jpg" loading="lazy"/>
-                                    <div class="image-title">Settings Page</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-timeline">
-                        <div class="info-timeline">
-                            <h2 class="timeline-title">Various other Android Projects</h2>
-                            <ul class="timeline-ul">
-                                <li>Android projects using Java on Android Studio such as an address book app, cannon game, doodle drawing app, and a weather viewer app.</li>
-                            </ul>
-                            <br/>
-                            <div class="images-container">
-                                <div onClick="toggleModal(15)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/addressBook1.png" loading="lazy"/>
-                                    <div class="image-title-vert">Address Book Contacts List</div>
-                                </div>
-                                <div onClick="toggleModal(16)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/addressBook2.png" loading="lazy"/>
-                                    <div class="image-title-vert">Address Book Edit Contact</div>
-                                </div>
-                                <div onClick="toggleModal(17)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/cannonGame.png" loading="lazy"/>
-                                    <div class="image-title-vert">Cannon Game</div>
-                                </div>
-                                <div onClick="toggleModal(18)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/doodleApp.png" loading="lazy"/>
-                                    <div class="image-title-vert">Doodle Drawing App</div>
-                                </div>
-                                <div onClick="toggleModal(19)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/android/weatherApp.png" loading="lazy"/>
-                                    <div class="image-title-vert">Weather App</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-timeline">
-                        <div class="info-timeline">
-                            <h2 class="timeline-title">Various iOS Projects</h2>
-                            <ul class="timeline-ul">
-                                <li>iOS projects using Swift on Xcode such as a personality quiz app, a restaurant menu app, and a to-do list app.</li>
-                            </ul>
-                            <br/>
-                            <h3>Restaurant App</h3>
-                            <ul class="timeline-ul">
-                                <li>A restaurant app that let's users see a menu, choose items to add to the order and process the order. </li>
-                                <li>All menu information is fed from an external server so that items can be configured on the fly.</li>
-                                <li>After clicking submit order, the order information get's passed to the server which determines 
-                                    how long it takes and responds back with a time interval of the order.</li>
-                            </ul>
-                            <br/>
-                            <div class="images-container">
-                                <div onClick="toggleModal(20)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/menu.png" loading="lazy"/>
-                                    <div class="image-title-vert">Menu Page</div>
-                                </div>
-                                <div onClick="toggleModal(21)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/menuEntree.png" loading="lazy"/>
-                                    <div class="image-title-vert">Menu Entrees</div>
-                                </div>
-                                <div onClick="toggleModal(22)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/itemDescription.png" loading="lazy"/>
-                                    <div class="image-title-vert">Food Item Description</div>
-                                </div>
-                                <div onClick="toggleModal(23)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/orders.png" loading="lazy"/>
-                                    <div class="image-title-vert">Orders Cart Page</div>
-                                </div>
-                                <div onClick="toggleModal(24)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/RestaurantApp_iOS/submit.png" loading="lazy"/>
-                                    <div class="image-title-vert">Submit Orders Page</div>
-                                </div>
-                                <div onClick="toggleModal(25)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/todoApp1.png" loading="lazy"/>
-                                    <div class="image-title-vert">To-Do App List</div>
-                                </div>
-                                <div onClick="toggleModal(26)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/todoApp2.png"loading="lazy"/>
-                                    <div class="image-title-vert">To-Do App More Info</div>
-                                </div>
-                                <div onClick="toggleModal(27)" class="image-box-vert">
-                                    <img class="image-img-vert img-stretch" src="./img/ios/loginExample.png" loading="lazy"/>
-                                    <div class="image-title-vert">Login Example</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="contact-section">
-            <h1 class="section-title">Contact Me</h1>
-            <div class="box-two">
-                <div class="box-two-inner">
-                    <div class="box-two-title">
+    </section>
+
+    <section id="ContactSection" class="ContactSection">
+        <div class="ContactContainer">
+            <h1 class="ContactSectionTitle">Contact Me</h1>
+            <div class="ContactCards">
+                <div class="ContactCard">
+                    <div class="ContactCardTitle">
                         <i class="bi-linkedin"></i>
-                        <h3>LinkedIn</h3>
+                        &nbsp;LinkedIn
                     </div>
-                    <p><a class="link-no-decor" target="_blank" href="https://www.linkedin.com/in/asa-kahn/">Asa Kahn</a></p>
+                    <div class="ContactCardLink">
+                        <a target="_blank" href="https://www.linkedin.com/in/asa-kahn/">Asa Kahn</a>
+                    </div>
                 </div>
-                <div class="box-two-inner">
-                    <div class="box-two-title">
+                <div class="ContactCard">
+                    <div class="ContactCardTitle">
                         <i class="bi-github"></i>
-                        <h3>Github</h3>
+                        &nbsp;Github
                     </div>
-                    <p><a class="link-no-decor" target="_blank" href="https://github.com/asakahn">@asakahn</a></p>
+                    <div class="ContactCardLink">
+                        <a target="_blank" href="https://github.com/asakahn">@asakahn</a>
+                    </div>
                 </div>
-                <div class="box-two-inner">
-                    <div class="box-two-title">
-                        <i class="bi bi-envelope"></i>
-                        <h3>Email</h3>
+                <div class="ContactCard">
+                    <div class="ContactCardTitle">
+                        <i class="bi-envelope"></i>
+                        &nbsp;Email
                     </div>
-                    <p><a class="link-no-decor" href="mailto:KahnTek@gmail.com">KahnTek@gmail.com</a></p>
+                    <div class="ContactCardLink">
+                        <a target="_blank" href="mailto:KahnTek@gmail.com">KahnTek@gmail.com</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
     <div onClick="toggleModal(-1)" id="image-modal">
         <div id="image-modal-holder">
             <div id="image-hold">
@@ -393,7 +324,7 @@
             </div>
         </div>
     </div>
-    <div class="add-space-break"></div>
+
     <script src="./js/main.js"></script>
 </body>
 </html>
